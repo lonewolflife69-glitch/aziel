@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="A private interactive love story for Aziel on Girlfriend Day. Created with love by Ryan.">
+  <meta name="theme-color" content="#070709">
+  
+  <title>Aziel ♡ Happy Girlfriend Day</title>
+
+  <!-- CSS Design System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Fixed Canvas 2D Procedural Lily Engine Overlay -->
+  <canvas id="lilyCanvas"></canvas>
+
+  <!-- 1. CINEMATIC INTRO SCREEN -->
+  <div id="intro-screen">
+    <div class="intro-text-wrapper">
+      <div id="intro-greeting" class="intro-line greeting serif-heading">Aziel...</div>
+      <div id="intro-subtext" class="intro-line subtext">I made a little world for you.</div>
+      <div id="intro-taketime" class="intro-line take-time">Take your time. ♡</div>
+    </div>
+    <button id="btn-begin" class="btn-begin" aria-label="Begin Experience">BEGIN ♡</button>
+  </div>
+
+  <!-- 2. LILY FRAME REVEAL OVERLAY -->
+  <div id="frame-reveal-screen">
+    <div class="frame-reveal-card">
+      <div id="frame-line1" class="frame-quote serif-heading">For the girl who loves lilies...</div>
+      <div id="frame-line2" class="frame-quote highlight serif-heading">...and somehow became my favorite thing too.</div>
+      <div id="frame-line3" class="frame-quote frame-line-subtext">
+        Aziel, if I could give you one thing today, it would be the ability to see yourself through my eyes.
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN SCROLLABLE CONTENT -->
+  <div id="main-content">
+
+    <!-- 3. HERO SECTION -->
+    <section id="hero-section" class="experience-section">
+      <h1 id="hero-title" class="hero-title serif-heading">Happy Girlfriend Day, Aziel ♡</h1>
+      <p id="hero-line1" class="hero-subtitle">I could have just sent you a message.</p>
+      <p id="hero-line2" class="hero-subtitle">But you deserve something that took a little more of my heart.</p>
+      <p id="hero-line3" class="hero-subtitle" style="color: var(--accent-gold); font-weight: 500;">So I made this for you.</p>
+
+      <div class="scroll-indicator">
+        <span style="font-size: 0.85rem; letter-spacing: 0.1em; color: var(--text-muted);">SCROLL TO EXPLORE</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 8. OUR SOUNDTRACK -->
+    <section id="soundtrack-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">If Our Relationship Had a Soundtrack...</h2>
+      <p style="color: var(--text-blush); font-size: 1.1rem; text-align: center;">The songs that sound like you.</p>
+
+      <div id="soundtrack-grid" class="soundtrack-grid">
+        <!-- Injected via js/script.js -->
+      </div>
+
+      <div class="music-controls">
+        <button id="btn-music" class="btn-music">Play our song ♫</button>
+      </div>
+    </section>
+
+    <!-- SELECTIVE QUIET PHOTO MOMENT 1 -->
+    <section class="experience-section" style="min-height: auto;">
+      <div class="quiet-photo-section">
+        <img id="quiet-photo-1" class="quiet-photo-img" src="assets/images/aziel_1.jpg" alt="Aziel">
+        <div class="quiet-photo-overlay">
+          <p id="quiet-quote-1" class="quiet-photo-quote serif-heading"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. OUR STORY — "JUST US." (MEMORY BOX EXPERIENCE) -->
+    <section id="just-us-section" class="experience-section">
+      <div class="just-us-header">
+        <h2 id="just-us-title" class="just-us-title serif-heading">Just Us.</h2>
+        <p id="just-us-subtitle" class="just-us-subtitle">Some memories don't need a reason to be special.</p>
+      </div>
+
+      <div id="just-us-container" style="width: 100%;">
+        <!-- Injected via js/script.js -->
+      </div>
+    </section>
+
+    <!-- SELECTIVE QUIET PHOTO MOMENT 2 -->
+    <section class="experience-section" style="min-height: auto;">
+      <div class="quiet-photo-section">
+        <img id="quiet-photo-2" class="quiet-photo-img" src="assets/images/aziel_2.jpg" alt="Aziel">
+        <div class="quiet-photo-overlay">
+          <p id="quiet-quote-2" class="quiet-photo-quote serif-heading"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FLOATING POLAROID PHOTO GALLERY -->
+    <section id="gallery-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">Moments Frozen in Time</h2>
+      <p style="color: var(--text-blush); font-size: 1.1rem; text-align: center;">Tap any photo to look closer ♡</p>
+
+      <div id="polaroid-grid" class="polaroid-grid">
+        <!-- Injected via js/script.js -->
+      </div>
+    </section>
+
+    <!-- 6. "THINGS I DON'T SAY ENOUGH" -->
+    <section id="reasons-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">Things I Don't Say Enough...</h2>
+      <p style="color: var(--text-blush); font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">Tap the heart to discover another reason.</p>
+
+      <div class="reasons-box">
+        <button id="btn-reason" class="btn-reason" aria-label="Discover Reason">♡</button>
+        <div id="reason-text" class="reason-text serif-heading"></div>
+      </div>
+    </section>
+
+    <!-- 7. PERSONALIZED MEMORY QUIZ -->
+    <section id="quiz-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">How Well Do You Know Us?</h2>
+      <p style="color: var(--text-blush); font-size: 1.1rem; margin-bottom: 2rem; text-align: center;">A little quiz made just for you.</p>
+
+      <div id="quiz-box" class="quiz-card">
+        <!-- Injected via js/script.js -->
+      </div>
+    </section>
+
+
+
+    <!-- 9. THE LOVE LETTER -->
+    <section id="letter-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">A Letter for You</h2>
+      <p style="color: var(--text-blush); font-size: 1.1rem; text-align: center;">Tap the envelope to open it.</p>
+
+      <div id="envelope-trigger" class="envelope-wrapper">
+        <div class="envelope">
+          <div class="envelope-seal">♡</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. FINAL CINEMATIC SURPRISE TRIGGER -->
+    <section id="finale-trigger-section" class="experience-section">
+      <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 1.5rem; text-align: center;">Before You Go...</h2>
+      <button id="btn-finale-trigger" class="btn-begin" style="opacity: 1; transform: scale(1);">One Last Thing ♡</button>
+    </section>
+
+  </div>
+
+  <!-- FULLSCREEN POLAROID LIGHTBOX MODAL -->
+  <div id="lightbox-modal">
+    <button id="lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Aziel">
+    <div id="lightbox-caption" class="lightbox-caption"></div>
+  </div>
+
+  <!-- UNFOLDED LOVE LETTER MODAL -->
+  <div id="letter-modal">
+    <div class="letter-paper">
+      <button id="letter-close" class="lightbox-close" style="color: #231720; top: 1rem; right: 1rem;" aria-label="Close Letter">&times;</button>
+      <div id="letter-content"></div>
+    </div>
+  </div>
+
+  <!-- 11. FINAL CINEMATIC SURPRISE SCREEN -->
+  <div id="finale-screen">
+    <div style="font-size: 2rem; color: var(--text-ivory); margin-bottom: 1.5rem;" class="serif-heading">Tap the glowing lily...</div>
+    <button id="btn-final-lily" class="final-lily-btn" aria-label="Bloom Final Lily">🪷</button>
+    <div id="finale-content" class="finale-content"></div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/config.js"></script>
+  <script src="js/lilyEngine.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
