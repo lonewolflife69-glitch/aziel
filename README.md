@@ -1,4 +1,4 @@
-# Paul ♡ Boyfriend Day Interactive Cinematic Website
+# Paul ♡ Anniversary Interactive Cinematic Website
 
 A private, interactive, cinematic love story built specifically for **Paul** by **Ryan**. Featuring procedural Canvas 2D **Rose blooming animations** (blooming deep crimson roses), floating wind petals, interactive relationship memory timeline, 3D floating polaroid gallery, love reason generator, relationship memory quiz, ambient soundtrack player, unsealing envelope love letter, and final surprise rose blooming climax.
 
@@ -32,7 +32,7 @@ Open `js/config.js` in any text editor to modify:
 
 ## 🚀 How to Host on GitHub Pages (Free & Public/Private Link)
 
-1. Create a new repository on [GitHub.com](https://github.com/new) (e.g. `paul-boyfriend-day`).
+1. Create a new repository on [GitHub.com](https://github.com/new) (e.g. `paul-anniversary`).
 2. Upload all files from this project folder (`index.html`, `css/`, `js/`, `assets/`, `README.md`).
 3. In your GitHub repository settings:
    - Go to **Settings** -> **Pages** (under Code and automation).
@@ -40,7 +40,7 @@ Open `js/config.js` in any text editor to modify:
    - Under **Branch**, select `main` (or `master`) and folder `/ (root)`.
    - Click **Save**.
 4. Within 1–2 minutes, GitHub will generate your live link:
-   `https://YOUR-GITHUB-USERNAME.github.io/paul-boyfriend-day/`
+   `https://YOUR-GITHUB-USERNAME.github.io/paul-anniversary/`
 
 ---
 

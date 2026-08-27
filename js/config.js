@@ -1,6 +1,6 @@
 /**
  * ===================================================================
- * PAUL & RYAN - BOYFRIEND DAY WEBSITE CONFIGURATION
+ * PAUL & RYAN - ANNIVERSARY WEBSITE CONFIGURATION
  * ===================================================================
  * Ryan, you can easily edit any text, photos, memory cards, quiz items,
  * songs, or love letter content right here!
@@ -10,8 +10,8 @@
 window.PAUL_CONFIG = {
   // Names & Signatures
   boyfriendName: "Paul",
-  partnerName: "Ryan",
-  partnerSignature: "Ryan",
+  partnerName: "Merlin",
+  partnerSignature: "Merlin",
 
   // Introductory & Hero Messages
   introText: {
@@ -28,7 +28,7 @@ window.PAUL_CONFIG = {
   },
 
   heroText: {
-    title: "Happy National Boyfriend Day, Paul ♡",
+    title: "Happy Anniversary, Paul ♡",
     line1: "I could have just sent you a message.",
     line2: "But you deserve something that took a little more of my heart.",
     line3: "So I made this for you."
@@ -246,7 +246,7 @@ window.PAUL_CONFIG = {
     name: "Paul ♡",
     choiceQuote: "If I had to choose one person to keep making memories with...\nI'd choose you. Again. Every time.",
     finalPhoto: "assets/images/paul_final.jpg",
-    dayGreeting: "Happy Boyfriend Day, Paul.",
+    dayGreeting: "Happy Anniversary, Paul.",
     thankYou: "Thank you for being you.",
     always: "Always.",
     signature: "— RYAN"
