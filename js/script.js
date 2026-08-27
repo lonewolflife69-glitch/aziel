@@ -1,21 +1,21 @@
 /**
  * ===================================================================
- * AZIEL & RYAN - MAIN INTERACTIVE APPLICATION LOGIC
+ * PAUL & RYAN - MAIN INTERACTIVE APPLICATION LOGIC
  * ===================================================================
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const config = window.AZIEL_CONFIG;
+  const config = window.PAUL_CONFIG;
   if (!config) return;
 
-  // Initialize Canvas Lily Engine
-  const lilyEngine = new LilyEngine('lilyCanvas');
+  // Initialize Canvas Rose Engine
+  const roseEngine = new RoseEngine('roseCanvas');
 
   // Populate Dynamic HTML Content from Config
   initContent(config);
 
   // Intro Sequence Controller
-  initIntroSequence(config, lilyEngine);
+  initIntroSequence(config, roseEngine);
 
   // Setup Interactivity
   initPolaroidGallery(config);
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initQuiz(config);
   initSoundtrack(config);
   initLoveLetter(config);
-  initFinale(config, lilyEngine);
+  initFinale(config, roseEngine);
   initScrollReveals();
 });
 
@@ -62,7 +62,7 @@ function initContent(config) {
   }
 
   // ===================================================================
-  // 9. OUR STORY — "JUST US." (MEMORY BOX EXPERIENCE)
+  // OUR STORY — "JUST US." (MEMORY BOX EXPERIENCE)
   // ===================================================================
   const justUsConfig = config.justUsConfig;
   document.getElementById('just-us-title').textContent = justUsConfig.title;
@@ -78,13 +78,13 @@ function initContent(config) {
       card.className = 'memory-card';
       card.innerHTML = `
         <p class="memory-quote serif-heading">"${mem.quote}"</p>
-        <img class="memory-img" src="${mem.photo}" alt="Aziel & Ryan" loading="lazy">
+        <img class="memory-img" src="${mem.photo}" alt="Paul & Ryan" loading="lazy">
         <p class="memory-caption">${mem.caption}</p>
       `;
     } else if (mem.type === 'photo-first') {
       card.className = 'memory-card';
       card.innerHTML = `
-        <img class="memory-img" style="margin-top:0; margin-bottom:1rem;" src="${mem.photo}" alt="Aziel & Ryan" loading="lazy">
+        <img class="memory-img" style="margin-top:0; margin-bottom:1rem;" src="${mem.photo}" alt="Paul & Ryan" loading="lazy">
         <p class="memory-quote serif-heading">"${mem.quote}"</p>
         <p class="memory-caption">${mem.caption}</p>
       `;
@@ -145,9 +145,9 @@ function initContent(config) {
 }
 
 /* -------------------------------------------------------------------
- * 2. CINEMATIC INTRO & LILY BLOOM SEQUENCE
+ * 2. CINEMATIC INTRO & ROSE BLOOM SEQUENCE
  * ------------------------------------------------------------------- */
-function initIntroSequence(config, lilyEngine) {
+function initIntroSequence(config, roseEngine) {
   const introScreen = document.getElementById('intro-screen');
   const frameScreen = document.getElementById('frame-reveal-screen');
   const btnBegin = document.getElementById('btn-begin');
@@ -163,8 +163,8 @@ function initIntroSequence(config, lilyEngine) {
     introScreen.style.opacity = '0';
     setTimeout(() => { introScreen.style.visibility = 'hidden'; }, 1000);
 
-    // Start Canvas Lily growth and ONLY trigger text reveal once bloom FULLY finishes + 1.2s quiet pause!
-    lilyEngine.startBloomAnimation(() => {
+    // Start Canvas Rose growth and ONLY trigger text reveal once bloom FULLY finishes + 1.2s quiet pause!
+    roseEngine.startBloomAnimation(() => {
       // Quiet pause (1.2s) after 5-second bloom completes to admire the full blossom on canvas
       setTimeout(() => {
         frameScreen.classList.add('visible');
@@ -182,7 +182,7 @@ function initIntroSequence(config, lilyEngine) {
           frameScreen.style.opacity = '0';
           setTimeout(() => {
             frameScreen.style.display = 'none';
-            lilyEngine.state = 'ambient';
+            roseEngine.state = 'ambient';
             
             const mainContent = document.getElementById('main-content');
             if (mainContent) {
@@ -216,7 +216,7 @@ function initPolaroidGallery(config) {
 
     card.innerHTML = `
       <div class="polaroid-img-wrapper">
-        <img class="polaroid-img" src="${item.photo}" alt="Aziel" loading="lazy">
+        <img class="polaroid-img" src="${item.photo}" alt="Paul" loading="lazy">
       </div>
       <div class="polaroid-caption">${item.caption}</div>
     `;
@@ -271,8 +271,8 @@ function initQuiz(config) {
     if (qIdx >= config.quiz.length) {
       quizBox.innerHTML = `
         <div style="text-align:center; padding: 2rem;">
-          <h3 class="serif-heading" style="font-size: 1.8rem; color: var(--accent-gold);">Quiz Completed! 🌸</h3>
-          <p style="margin-top: 1rem; color: var(--text-blush);">You know us inside out. I love you, Aziel!</p>
+          <h3 class="serif-heading" style="font-size: 1.8rem; color: var(--accent-gold);">Quiz Completed! 🌹</h3>
+          <p style="margin-top: 1rem; color: var(--text-blush);">You know us inside out. I love you, Paul!</p>
         </div>
       `;
       return;
@@ -448,7 +448,7 @@ function initLoveLetter(config) {
   html += `
     <div class="letter-signature-block">
       <p style="font-style:italic;">${l.closing}</p>
-      <p class="signature-text">${l.signature} 🌸</p>
+      <p class="signature-text">${l.signature} 🌹</p>
     </div>
   `;
 
@@ -467,7 +467,7 @@ function initLoveLetter(config) {
 /* -------------------------------------------------------------------
  * 8. FINALE CINEMATIC SURPRISE
  * ------------------------------------------------------------------- */
-function initFinale(config, lilyEngine) {
+function initFinale(config, roseEngine) {
   const btnTrigger = document.getElementById('btn-finale-trigger');
   const finaleScreen = document.getElementById('finale-screen');
 
@@ -475,18 +475,18 @@ function initFinale(config, lilyEngine) {
     finaleScreen.classList.add('active');
   });
 
-  const finalLilyBtn = document.getElementById('btn-final-lily');
+  const finalRoseBtn = document.getElementById('btn-final-rose');
   const finaleContent = document.getElementById('finale-content');
 
-  finalLilyBtn.addEventListener('click', () => {
-    finalLilyBtn.style.display = 'none';
-    lilyEngine.startFinaleSurprise();
+  finalRoseBtn.addEventListener('click', () => {
+    finalRoseBtn.style.display = 'none';
+    roseEngine.startFinaleSurprise();
 
     const f = config.finale;
     finaleContent.innerHTML = `
       <h2 class="serif-heading" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;">${f.name}</h2>
       <p style="font-size: 1.25rem; color: var(--text-blush); white-space: pre-line; margin-bottom: 1.5rem;">${f.choiceQuote}</p>
-      <img class="finale-photo" src="${f.finalPhoto}" alt="Aziel & Ryan">
+      <img class="finale-photo" src="${f.finalPhoto}" alt="Paul & Ryan">
       <h3 class="serif-heading" style="font-size: 1.8rem; color: var(--text-ivory); margin-top: 1rem;">${f.dayGreeting}</h3>
       <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">${f.thankYou}</p>
       <p class="signature-text" style="margin-top: 1.5rem;">${f.always}</p>

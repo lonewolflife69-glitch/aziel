@@ -3,36 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="A private interactive love story for Aziel on Girlfriend Day. Created with love by Ryan.">
-  <meta name="theme-color" content="#070709">
+  <meta name="description" content="A private interactive love story for Paul on Boyfriend Day. Created with love by Ryan.">
+  <meta name="theme-color" content="#fff0f3">
   
-  <title>Aziel ♡ Happy Girlfriend Day</title>
+  <title>Paul ♡ Happy Boyfriend Day</title>
 
   <!-- CSS Design System -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Fixed Canvas 2D Procedural Lily Engine Overlay -->
-  <canvas id="lilyCanvas"></canvas>
+  <!-- Fixed Canvas 2D Procedural Rose Engine Overlay -->
+  <canvas id="roseCanvas"></canvas>
 
   <!-- 1. CINEMATIC INTRO SCREEN -->
   <div id="intro-screen">
     <div class="intro-text-wrapper">
-      <div id="intro-greeting" class="intro-line greeting serif-heading">Aziel...</div>
+      <div id="intro-greeting" class="intro-line greeting serif-heading">Paul...</div>
       <div id="intro-subtext" class="intro-line subtext">I made a little world for you.</div>
       <div id="intro-taketime" class="intro-line take-time">Take your time. ♡</div>
     </div>
     <button id="btn-begin" class="btn-begin" aria-label="Begin Experience">BEGIN ♡</button>
   </div>
 
-  <!-- 2. LILY FRAME REVEAL OVERLAY -->
+  <!-- 2. ROSE FRAME REVEAL OVERLAY -->
   <div id="frame-reveal-screen">
     <div class="frame-reveal-card">
-      <div id="frame-line1" class="frame-quote serif-heading">For the girl who loves lilies...</div>
-      <div id="frame-line2" class="frame-quote highlight serif-heading">...and somehow became my favorite thing too.</div>
+      <div id="frame-line1" class="frame-quote serif-heading">For the boy who deserves the world...</div>
+      <div id="frame-line2" class="frame-quote highlight serif-heading">...and blooming roses just for him.</div>
       <div id="frame-line3" class="frame-quote frame-line-subtext">
-        Aziel, if I could give you one thing today, it would be the ability to see yourself through my eyes.
+        Paul, if I could give you one thing today, it would be the ability to see yourself through my eyes.
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
 
     <!-- 3. HERO SECTION -->
     <section id="hero-section" class="experience-section">
-      <h1 id="hero-title" class="hero-title serif-heading">Happy Girlfriend Day, Aziel ♡</h1>
+      <h1 id="hero-title" class="hero-title serif-heading">Happy National Boyfriend Day, Paul ♡</h1>
       <p id="hero-line1" class="hero-subtitle">I could have just sent you a message.</p>
       <p id="hero-line2" class="hero-subtitle">But you deserve something that took a little more of my heart.</p>
       <p id="hero-line3" class="hero-subtitle" style="color: var(--accent-gold); font-weight: 500;">So I made this for you.</p>
@@ -72,7 +72,7 @@
     <!-- SELECTIVE QUIET PHOTO MOMENT 1 -->
     <section class="experience-section" style="min-height: auto;">
       <div class="quiet-photo-section">
-        <img id="quiet-photo-1" class="quiet-photo-img" src="assets/images/aziel_1.jpg" alt="Aziel">
+        <img id="quiet-photo-1" class="quiet-photo-img" src="assets/images/paul_1.jpg" alt="Paul">
         <div class="quiet-photo-overlay">
           <p id="quiet-quote-1" class="quiet-photo-quote serif-heading"></p>
         </div>
@@ -94,7 +94,7 @@
     <!-- SELECTIVE QUIET PHOTO MOMENT 2 -->
     <section class="experience-section" style="min-height: auto;">
       <div class="quiet-photo-section">
-        <img id="quiet-photo-2" class="quiet-photo-img" src="assets/images/aziel_2.jpg" alt="Aziel">
+        <img id="quiet-photo-2" class="quiet-photo-img" src="assets/images/paul_2.jpg" alt="Paul">
         <div class="quiet-photo-overlay">
           <p id="quiet-quote-2" class="quiet-photo-quote serif-heading"></p>
         </div>
@@ -132,8 +132,6 @@
       </div>
     </section>
 
-
-
     <!-- 9. THE LOVE LETTER -->
     <section id="letter-section" class="experience-section">
       <h2 class="serif-heading" style="font-size: clamp(2rem, 5vw, 3rem); color: var(--text-ivory); margin-bottom: 0.5rem; text-align: center;">A Letter for You</h2>
@@ -157,7 +155,7 @@
   <!-- FULLSCREEN POLAROID LIGHTBOX MODAL -->
   <div id="lightbox-modal">
     <button id="lightbox-close" class="lightbox-close" aria-label="Close Lightbox">&times;</button>
-    <img id="lightbox-img" class="lightbox-content" src="" alt="Aziel">
+    <img id="lightbox-img" class="lightbox-content" src="" alt="Paul">
     <div id="lightbox-caption" class="lightbox-caption"></div>
   </div>
 
@@ -171,14 +169,14 @@
 
   <!-- 11. FINAL CINEMATIC SURPRISE SCREEN -->
   <div id="finale-screen">
-    <div style="font-size: 2rem; color: var(--text-ivory); margin-bottom: 1.5rem;" class="serif-heading">Tap the glowing lily...</div>
-    <button id="btn-final-lily" class="final-lily-btn" aria-label="Bloom Final Lily">🪷</button>
+    <div style="font-size: 2rem; color: var(--text-ivory); margin-bottom: 1.5rem;" class="serif-heading">Tap the glowing rose...</div>
+    <button id="btn-final-rose" class="final-rose-btn" aria-label="Bloom Final Rose">🌹</button>
     <div id="finale-content" class="finale-content"></div>
   </div>
 
   <!-- JavaScript Modules -->
   <script src="js/config.js"></script>
-  <script src="js/lilyEngine.js"></script>
+  <script src="js/roseEngine.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
