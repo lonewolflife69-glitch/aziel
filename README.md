@@ -1,15 +1,15 @@
 # Paul ♡ Anniversary Interactive Cinematic Website
 
-A private, interactive, cinematic love story built specifically for **Paul** by **Ryan**. Featuring procedural Canvas 2D **Rose blooming animations** (blooming deep crimson roses), floating wind petals, interactive relationship memory timeline, 3D floating polaroid gallery, love reason generator, relationship memory quiz, ambient soundtrack player, unsealing envelope love letter, and final surprise rose blooming climax.
+A private, interactive, cinematic love story built specifically for **Paul** by **Merlin**. Featuring procedural Canvas 2D **Rose blooming animations** (blooming deep crimson roses), floating wind petals, interactive relationship memory timeline, 3D floating polaroid gallery, love reason generator, relationship memory quiz, ambient soundtrack player, unsealing envelope love letter, and final surprise rose blooming climax.
 
 ---
 
-## 🌹 Customization Guide (How Ryan Can Edit Everything)
+## 🌹 Customization Guide (How Merlin Can Edit Everything)
 
 All text, dates, memories, photos, reasons, quiz questions, soundtrack songs, love letter paragraphs, and final messages are stored in **`js/config.js`**.
 
 ### 1. Changing Photos
-Replace the files inside `assets/images/` with Ryan & Paul's actual photos using the same file names, or update the image paths in `js/config.js`:
+Replace the files inside `assets/images/` with Paul & Merlin's actual photos using the same file names, or update the image paths in `js/config.js`:
 
 - `paul_1.jpg` & `paul_2.jpg`: Selective quiet photo moments.
 - `paul_story1.jpg` to `paul_story4.jpg`: Story timeline memory photos.
@@ -19,8 +19,8 @@ Replace the files inside `assets/images/` with Ryan & Paul's actual photos using
 ### 2. Editing Text, Dates & Letters
 Open `js/config.js` in any text editor to modify:
 - **`boyfriendName`**: Default `"Paul"`
-- **`partnerName`**: Default `"Ryan"`
-- **`partnerSignature`**: Default `"Ryan"`
+- **`partnerName`**: Default `"Merlin"`
+- **`partnerSignature`**: Default `"Merlin"`
 - **`justUsConfig`**: Add or change memory dates, titles, descriptions, and captions.
 - **`polaroids`**: Edit polaroid photo paths and handwritten captions.
 - **`reasons`**: Add or customize reasons in "Things I Don't Say Enough".

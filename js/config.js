@@ -1,8 +1,8 @@
 /**
  * ===================================================================
- * PAUL & RYAN - ANNIVERSARY WEBSITE CONFIGURATION
+ * PAUL & MERLIN - ANNIVERSARY WEBSITE CONFIGURATION
  * ===================================================================
- * Ryan, you can easily edit any text, photos, memory cards, quiz items,
+ * Merlin, you can easily edit any text, photos, memory cards, quiz items,
  * songs, or love letter content right here!
  * ===================================================================
  */
@@ -188,10 +188,10 @@ window.PAUL_CONFIG = {
     },
     {
       question: "Who is the luckiest person on planet Earth to have Paul?",
-      options: ["Ryan", "Definitely Ryan", "100% Ryan", "All of the above"],
+      options: ["Merlin", "Definitely Merlin", "100% Merlin", "All of the above"],
       correctIndex: 3,
-      correctMsg: "100% true! Ryan is the luckiest person alive to have you! ❤️",
-      wrongMsg: "Oops! There's only one right answer: Ryan is insanely lucky! 😉"
+      correctMsg: "100% true! Merlin is the luckiest person alive to have you! ❤️",
+      wrongMsg: "Oops! There's only one right answer: Merlin is insanely lucky! 😉"
     },
     {
       question: "What makes an ordinary day feel like an extraordinary memory?",
@@ -236,7 +236,7 @@ window.PAUL_CONFIG = {
       "I choose you today, tomorrow, and every single day that follows. Here's to us, to our memories, and to all the beautiful chapters we haven't even written yet."
     ],
     closing: "Always yours,",
-    signature: "Ryan"
+    signature: "Merlin"
   },
 
   // Final Cinematic Surprise
@@ -249,6 +249,6 @@ window.PAUL_CONFIG = {
     dayGreeting: "Happy Anniversary, Paul.",
     thankYou: "Thank you for being you.",
     always: "Always.",
-    signature: "— RYAN"
+    signature: "— MERLIN"
   }
 };

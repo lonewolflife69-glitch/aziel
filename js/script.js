@@ -1,6 +1,6 @@
 /**
  * ===================================================================
- * PAUL & RYAN - MAIN INTERACTIVE APPLICATION LOGIC
+ * PAUL & MERLIN - MAIN INTERACTIVE APPLICATION LOGIC
  * ===================================================================
  */
 
@@ -78,13 +78,13 @@ function initContent(config) {
       card.className = 'memory-card';
       card.innerHTML = `
         <p class="memory-quote serif-heading">"${mem.quote}"</p>
-        <img class="memory-img" src="${mem.photo}" alt="Paul & Ryan" loading="lazy">
+        <img class="memory-img" src="${mem.photo}" alt="Paul & Merlin" loading="lazy">
         <p class="memory-caption">${mem.caption}</p>
       `;
     } else if (mem.type === 'photo-first') {
       card.className = 'memory-card';
       card.innerHTML = `
-        <img class="memory-img" style="margin-top:0; margin-bottom:1rem;" src="${mem.photo}" alt="Paul & Ryan" loading="lazy">
+        <img class="memory-img" style="margin-top:0; margin-bottom:1rem;" src="${mem.photo}" alt="Paul & Merlin" loading="lazy">
         <p class="memory-quote serif-heading">"${mem.quote}"</p>
         <p class="memory-caption">${mem.caption}</p>
       `;
@@ -486,7 +486,7 @@ function initFinale(config, roseEngine) {
     finaleContent.innerHTML = `
       <h2 class="serif-heading" style="font-size: 2.5rem; color: var(--accent-gold); margin-bottom: 1rem;">${f.name}</h2>
       <p style="font-size: 1.25rem; color: var(--text-blush); white-space: pre-line; margin-bottom: 1.5rem;">${f.choiceQuote}</p>
-      <img class="finale-photo" src="${f.finalPhoto}" alt="Paul & Ryan">
+      <img class="finale-photo" src="${f.finalPhoto}" alt="Paul & Merlin">
       <h3 class="serif-heading" style="font-size: 1.8rem; color: var(--text-ivory); margin-top: 1rem;">${f.dayGreeting}</h3>
       <p style="color: var(--text-muted); font-size: 1.1rem; margin-top: 0.5rem;">${f.thankYou}</p>
       <p class="signature-text" style="margin-top: 1.5rem;">${f.always}</p>
