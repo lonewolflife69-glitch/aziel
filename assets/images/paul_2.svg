@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b0e14" />
+      <stop offset="50%" stop-color="#26151e" />
+      <stop offset="100%" stop-color="#0d080a" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.5">
+      <stop offset="0%" stop-color="#e63946" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#e63946" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <circle cx="400" cy="400" r="300" fill="url(#glow)" />
+  <g transform="translate(400, 420) scale(1.2)" fill="none" stroke="#ff758f" stroke-width="1.5" opacity="0.65">
+    <circle cx="0" cy="0" r="40" fill="#e63946" fill-opacity="0.8" />
+    <circle cx="-20" cy="-10" r="35" fill="#c9184a" fill-opacity="0.7" />
+    <circle cx="20" cy="-10" r="35" fill="#800f2f" fill-opacity="0.7" />
+    <path d="M0,120 Q0,200 0,250" stroke="#2d5a27" stroke-width="4" />
+  </g>
+  <text x="400" y="750" text-anchor="middle" fill="#fcf9f5" font-family="Georgia, serif" font-size="36" font-weight="500" letter-spacing="1">PAUL ♡ 2</text>
+  <text x="400" y="800" text-anchor="middle" fill="#ffb3c6" font-family="sans-serif" font-size="22" font-weight="300" letter-spacing="2">A Beautiful Memory</text>
+  <text x="400" y="850" text-anchor="middle" fill="#8a7b8c" font-family="sans-serif" font-size="16" font-weight="300">(Replace with Paul's photo in assets/images/)</text>
+</svg>
